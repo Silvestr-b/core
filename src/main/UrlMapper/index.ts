@@ -1,1 +1,1 @@
-export { UrlMapper } from './entities/UrlMapper'
+export { UrlMapper } from './UrlMapper'

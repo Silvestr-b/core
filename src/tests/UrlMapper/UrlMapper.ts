@@ -1,7 +1,6 @@
 import { expect } from 'chai'
-import { MappingCase } from '../entities/MappingCase'
 import * as sinon from 'sinon'
-import { UrlMapper } from '../index'
+import { UrlMapper } from '../../main/UrlMapper'
 
 
 describe('UrlMapper', () => {

@@ -1,12 +1,10 @@
-import { Route } from './Route'
+import { Route, Callback } from './Route'
 
-
-export type Callback<T> = (route: Route<T>) => void
 
 
 class Router<T extends object> {
    public route: Route<T>;
-   private listeners: Callback<T>[] = [];
+   private listeners: Callback<T, any, any>[] = [];
 
    set<R extends keyof T>(name: R, payload: T[R]) {
       this.route = new Route<T>(name, payload);
@@ -14,7 +12,7 @@ class Router<T extends object> {
       return this
    }
 
-   addListener(listener: Callback<T>) {
+   addListener(listener: Callback<T, any, any>) {
       this.listeners.push(listener)
       return this
    }

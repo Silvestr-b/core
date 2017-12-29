@@ -1,6 +1,6 @@
 import { expect } from 'chai'
 import * as sinon from 'sinon'
-import { UrlBuilder } from '../main'
+import { UrlBuilder } from '../../main/UrlBuilder'
 
 
 describe('UrlBuilder', () => {

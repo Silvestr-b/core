@@ -1,1 +1,2 @@
-export { UrlWatcher } from './UrlWatcher'
+// export { UrlWatcher } from './UrlWatcher'
+export const UrlWatcher = {}
