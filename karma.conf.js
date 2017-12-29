@@ -1,3 +1,4 @@
+
 // Karma configuration
 // Generated on Fri Dec 29 2017 12:38:12 GMT+0300 (RTZ 2 (зима))
 
@@ -15,7 +16,7 @@ module.exports = function (config) {
 
       // list of files / patterns to load in the browser
       files: [
-         './lib/tests/index.js'
+         './dist/tests.js'
       ],
 
 
@@ -27,14 +28,13 @@ module.exports = function (config) {
       // preprocess matching files before serving them to the browser
       // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
       preprocessors: {
-         './lib/tests/index.js': ['webpack']
+         // './src/tests/index.ts': ['webpack']
       },
 
-      webpack: {
-         resolve: {
-            extensions: ['.js']
-         }
-      },
+      // webpack: {
+      //    resolve: webpackConfig.resolve,
+      //    module: webpackConfig.module
+      // },
 
       client: {
          mocha: {
@@ -60,7 +60,7 @@ module.exports = function (config) {
 
       // level of logging
       // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
-      logLevel: config.LOG_INFO,
+      logLevel: config.LOG_ERROR,
 
 
       // enable / disable watching file and executing tests whenever any file changes
