@@ -1,14 +1,12 @@
 {
    "name": "core",
-   "version": "0.2.7",
+   "version": "0.2.8",
    "description": "core",
    "main": "./lib/main/index.js",
    "types": "./lib/main/index.d.ts",
    "scripts": {
-      "postinstall": "npm run build",
-      "build": "tsc",
-      "start": "node ./lib/main/index.js",
-      "test": "npm run build && mocha ./lib/tests/index.js",
+      "postinstall": "tsc",
+      "test": "mocha ./lib/tests/index.js && karma start",
       "devtest": "mocha ./lib/tests/index.js"
    },
    "author": "Silvestr Baibuz",
