@@ -1,0 +1,1 @@
+export { UrlMapper } from './entities/UrlMapper'
