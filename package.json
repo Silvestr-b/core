@@ -6,8 +6,9 @@
    "types": "./lib/main/index.d.ts",
    "scripts": {
       "postinstall": "npm run build",
-      "build": "tsc && webpack",
-      "test": "npm run build && npm run nodetest && npm run browsertest",
+      "build": "tsc",
+      "buildtests": "tsc && webpack",
+      "test": "npm run buildtests && npm run nodetest && npm run browsertest",
       "nodetest": "mocha ./lib/tests/index.js",
       "browsertest": "karma start",
       "devtest": "mocha ./lib/tests/index.js"
