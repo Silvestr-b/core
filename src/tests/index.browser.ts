@@ -2,7 +2,7 @@
 
 describe('Core', () => {
    // require('./BEMClasses')
-   // require('./BrowserHistory')
+   require('./BrowserHistory')
    // require('./Router')
    require('./UrlBuilder')
    require('./UrlMapper')

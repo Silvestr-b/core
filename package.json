@@ -9,7 +9,7 @@
       "build": "tsc",
       "buildtests": "tsc && webpack",
       "test": "npm run buildtests && npm run nodetest && npm run browsertest",
-      "nodetest": "mocha ./lib/tests/index.js",
+      "nodetest": "mocha ./lib/tests/index.node.js",
       "browsertest": "karma start",
       "devtest": "mocha ./lib/tests/index.js"
    },
